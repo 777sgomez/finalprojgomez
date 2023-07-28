@@ -10,5 +10,10 @@ document.querySelector('form').addEventListener("submit", function(event) {
     if (todoInput) {
         let li = document.createElement("li");
         li.textContent = todoInput;
+        let deleteButton = document.createElement("button");
+        deleteButton.innerText = "X";
+        deleteButton.addEventListener("click", function() {
+            li.remove();
+        })
     }
 })
