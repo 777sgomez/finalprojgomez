@@ -6,4 +6,9 @@ const ul = document.querySelector("ul");
 
 document.querySelector('form').addEventListener("submit", function(event) {
     event.preventDefault();
+    let todoInput = input.value;
+    if (todoInput) {
+        let li = document.createElement("li");
+        li.textContent = todoInput;
+    }
 })
