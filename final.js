@@ -14,6 +14,10 @@ document.querySelector('form').addEventListener("submit", function(event) {
         deleteButton.innerText = "X";
         deleteButton.addEventListener("click", function() {
             li.remove();
-        })
+        });
+
+        let checkButton = document.createElement("button");
+        checkButton.innerText = "Check";
+        
     }
 })
