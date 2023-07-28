@@ -18,8 +18,12 @@ document.querySelector('form').addEventListener("submit", function(event) {
 
         let checkButton = document.createElement("button");
         checkButton.innerText = "Check";
-        checkNutton.addEventListener("click", function() {
+        checkButton.addEventListener("click", function() {
             document.querySelector("li").style.textDecoration = "line-through";
         });
-    }
-})
+
+        li.appendChild(checkButton);
+        li.appendChild(deleteButton);
+        ul.appendChild(li);
+    };
+});
